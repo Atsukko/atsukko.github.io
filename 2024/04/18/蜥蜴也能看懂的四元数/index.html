@@ -17,7 +17,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha256-wiz7ZSCn/btzhjKDQBms9Hx4sSeUYsDrTLg7roPstac=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"atsukko.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.19.2","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":true,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":null,"activeClass":"gitalk"},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"atsukko.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.19.2","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12},"copycode":{"enable":true,"style":"default"},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":true,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":null,"activeClass":"gitalk"},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
 
     <meta property="og:type" content="article">
 <meta property="og:title" content="&#39;蜥蜴也能看懂的四元数！&#39;">
@@ -25,7 +25,7 @@
 <meta property="og:site_name" content="Atsukko&#39;s Deep Dark Dungeon">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2024-04-18T14:25:59.000Z">
-<meta property="article:modified_time" content="2024-05-01T06:14:05.451Z">
+<meta property="article:modified_time" content="2024-05-01T10:39:05.010Z">
 <meta property="article:author" content="Atsukko">
 <meta name="twitter:card" content="summary">
 
@@ -109,7 +109,9 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86-%E8%AE%A9%E8%9C%A5%E8%9C%B4%E7%9C%8B%E6%98%8E%E7%99%BD%E5%85%AC%E5%BC%8F%E8%A7%A3%E6%9E%90%E7%94%A8%E6%B3%95%E4%B8%BE%E4%BE%8B"><span class="nav-number">1.</span> <span class="nav-text">第一部分-让蜥蜴看明白：公式解析+用法举例！</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%97%8B%E8%BD%AC%E5%85%AC%E5%BC%8F"><span class="nav-number">1.1.</span> <span class="nav-text">旋转公式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9B%9B%E5%85%83%E6%95%B0"><span class="nav-number">1.2.</span> <span class="nav-text">四元数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9B%9B%E5%85%83%E6%95%B0%E7%9A%84%E7%94%A8%E6%B3%95"><span class="nav-number">1.3.</span> <span class="nav-text">四元数的用法</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86-%E8%AE%A9%E8%9C%A5%E8%9C%B4%E7%9C%8B%E6%98%8E%E7%99%BD-%E5%85%AC%E5%BC%8F%E5%92%8C%E4%B8%BE%E4%BE%8B"><span class="nav-text">第一部分 让蜥蜴看明白
+公式和举例</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%97%8B%E8%BD%AC%E5%85%AC%E5%BC%8F"><span class="nav-text">1. 旋转公式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9B%9B%E5%85%83%E6%95%B0"><span class="nav-text">2. 四元数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9B%9B%E5%85%83%E6%95%B0%E7%9A%84%E7%94%A8%E6%B3%95"><span class="nav-text">3. 四元数的用法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E4%BA%8C%E9%83%A8%E5%88%86-%E8%9C%A5%E8%9C%B4%E7%A7%91%E5%AD%A6%E5%AE%B6%E6%89%8D%E8%83%BD%E7%9C%8B%E6%87%82-%E6%8E%A8%E5%AF%BC%E4%B8%8E%E8%AF%81%E6%98%8E"><span class="nav-text">第二部分
+蜥蜴科学家才能看懂 推导与证明</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%89%E7%BB%B4%E7%A9%BA%E9%97%B4%E4%B8%AD%E7%9A%84%E6%97%8B%E8%BD%AC"><span class="nav-text">1. 三维空间中的旋转</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%97%8B%E8%BD%AC%E5%88%86%E8%A7%A3"><span class="nav-text">1.1 旋转分解</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#v_parallel%E7%9A%84%E6%97%8B%E8%BD%AC"><span class="nav-text">1.2 \(v_{\parallel}\)的旋转</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#v_perp%E7%9A%84%E6%97%8B%E8%BD%AC"><span class="nav-text">1.3 \(v_{\perp}\)的旋转</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#v%E7%9A%84%E6%97%8B%E8%BD%AC"><span class="nav-text">1.3 \(v\)的旋转</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9B%9B%E5%85%83%E6%95%B0-1"><span class="nav-text">2. 四元数</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -195,7 +197,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2024-05-01 14:14:05" itemprop="dateModified" datetime="2024-05-01T14:14:05+08:00">2024-05-01</time>
+      <time title="Modified: 2024-05-01 18:39:05" itemprop="dateModified" datetime="2024-05-01T18:39:05+08:00">2024-05-01</time>
     </span>
 
   
@@ -216,16 +218,18 @@
     
     
     <div class="post-body" itemprop="articleBody"><p><em>阅读本文前，您需要事先了解<strong>向量</strong>和<strong>虚数</strong>的概念</em></p>
-<p>要搞懂四元数，得由浅入深，不妨先问是什么？干什么？怎么办？</p>
+<p>要搞懂四元数，得由浅入深，不妨先问是什么？干什么？为什么？怎么办？</p>
 <ul>
 <li><p>是什么？答：四元数是一个<strong>虚数</strong></p></li>
 <li><p>干什么？答：四元数用来表示三维空间中的<strong>旋转</strong></p></li>
+<li><p>为什么？答：避免了用欧拉角描述旋转的<strong>万向节死锁</strong><em>(Gimbal
+Lock)</em>问题</p></li>
 <li><p>怎么办？答：套公式（真是公公又式式阿）</p></li>
 </ul>
-<p>本文会通过两个部分，由浅至深地分析四元数。第一部分包括其原理公式和基本用法，用最易懂的语言回答以上三个问题；如果你想深究其原理可继续阅读第二部分，其包括从解析几何到四元数的详细数学证明。</p>
-<h1
-id="第一部分-让蜥蜴看明白公式解析用法举例">第一部分-让蜥蜴看明白：公式解析+用法举例！</h1>
-<h2 id="旋转公式">旋转公式</h2>
+<p>本文会通过两个部分，由浅至深地分析四元数。第一部分包括其原理公式和基本用法，用最易懂的语言回答以上几个问题；如果你想深究其原理可继续阅读第二部分，其包括从解析几何到四元数的详细数学证明。</p>
+<h1 id="第一部分-让蜥蜴看明白-公式和举例">第一部分 让蜥蜴看明白
+公式和举例</h1>
+<h2 id="旋转公式">1. 旋转公式</h2>
 <p><span class="math display">\[\begin{equation}\label{eqn-1}
 v&#39;=qvq^*
 \end{equation}\]</span></p>
@@ -240,7 +244,7 @@ class="math inline">\(q\)</span>的某些运算后就能得到旋转后的新向
 class="math inline">\(v&#39;\)</span>，<del>蜥蜴表示：什么是向量？</del>
 那么现在的问题就是这个<span
 class="math inline">\(q\)</span>是什么东西？</p>
-<h2 id="四元数">四元数</h2>
+<h2 id="四元数">2. 四元数</h2>
 <p>  这里先给出四元数<span
 class="math inline">\(q\)</span>的表达式：<br />
 <span class="math display">\[
@@ -268,19 +272,199 @@ q=\sin \theta + u_x\cos \theta *i + u_y\cos \theta *j + u_z\cos \theta
 *k
 \]</span></p>
 <p>  那么，现在又有新的问题出现了，在旋转公式中是怎么实现向量和四元数的乘法的呢？答案是把向量写成纯四元数（实部为0的四元数）的形式，至于把向量转换为纯四元数以及四元数运算的细节我们到下一部分再展开聊聊<del>再聊下去就要偏题了！</del>。</p>
-<h2 id="四元数的用法">四元数的用法</h2>
+<h2 id="四元数的用法">3. 四元数的用法</h2>
 <p>  到这里，我们要做什么事情应该是非常清晰的：<font color=red>通过指定转轴<span
 class="math inline">\(u\)</span>和转角<span
 class="math inline">\(\theta\)</span>描述一个旋转！</font>那么谁来执行这个旋转呢？当然是把参数传给API让引擎完成了！</p>
 <p>  例如，Unity引擎的旋转就是由四元数实现的，它在四元数类Quaternion中为我们提供了一系列底层通过四元数描述三维空间中旋转的方法，例如下面这行C#代码：</p>
-<p><code>Debug.Log(Quaternion.FromToRotation(new Vector3(0, 0, 1), new Vector3(1, 0, 0)));</code></p>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Debug.Log(Quaternion.FromToRotation(<span class="keyword">new</span> Vector3(<span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>), <span class="keyword">new</span> Vector3(<span class="number">1</span>, <span class="number">0</span>, <span class="number">0</span>)));</span><br></pre></td></tr></table></figure>
 <p>  控制台输出结果为：</p>
-<p><code>(0.00000, 0.70711, 0.00000, 0.70711)</code></p>
-<p>  </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(0.00000, 0.70711, 0.00000, 0.70711)</span><br></pre></td></tr></table></figure>
+<p>  首先来看这行C#代码，Debug.Log()是Unity引擎提供的调试方法，将指定内容打印在编辑器控制台里；Quaternion类的静态方法FromToRotation()接受两个Vector3类型的参数（Vector3就是Unity引擎定义的三维向量类型），假设其分别为<span
+class="math inline">\(v_{1}\)</span>和<span
+class="math inline">\(v_{2}\)</span>，该方法会返回将<span
+class="math inline">\(v_{1}\)</span>旋转至<span
+class="math inline">\(v_{2}\)</span>需要的四元数，在这个例子中，它返回将向量<span
+class="math inline">\((0, 0, 1)\)</span>旋转至向量<span
+class="math inline">\((1, 0,
+0)\)</span>所需要的四元数，也就是我们的输出结果。</p>
+<p>  Unity中的四元数表示为<span class="math inline">\((x, y, z,
+w)\)</span>，前三个维度表示转轴向量，在本例中是<span
+class="math inline">\((0.00000, 0.70711,
+0.00000)\)</span>，跟y轴同方向，而<span
+class="math inline">\(w\)</span>表示<span
+class="math inline">\(cos(\frac{\theta}{2})\)</span>。对数字敏感的朋友可能已经发现了，<span
+class="math inline">\(0.70711\)</span>就是<span
+class="math inline">\(\frac{\sqrt{2}}{2}\)</span>的近似值，谁的cos值为<span
+class="math inline">\(\frac{\sqrt{2}}{2}\)</span>呢？<span
+class="math inline">\(\frac{\pi}{4}\)</span>，也就是<span
+class="math inline">\(45°\)</span>嘛，注意这里是<span
+class="math inline">\(\frac{\theta}{2}\)</span>，所以<span
+class="math inline">\(\theta = \frac{\pi}{2}\)</span>，<span
+class="math inline">\(90°\)</span>角，于是，将这个四元数翻译成人话就是，<strong>绕y轴旋转<span
+class="math inline">\(90°\)</span></strong>！</p>
+<p>  还有一个小问题，也就是为什么转轴向量也要用0.70711表示，转轴向量的模不是应该没有意义吗？这里其实是因为这个方法对返回值结果做了一个规范化，调整转轴向量的模长，使整个四元数的模为1，你可以试试不同的四元数对它们的4维的值做平方和，计算结果一定为1（准确来说是近似为1）。</p>
+<p>  还有一个小小问题，从这个例子我们可以看出来Unity引擎在做旋转计算时采用的是<strong>左手坐标系</strong>：伸出你的左手，大拇指与转轴向量同向，其余四指握拳，它们指向的方向就是旋转的方向，在这里就是左手大拇指指向y轴方向，四指旋转方向就是<span
+class="math inline">\((0, 0, 1)\)</span>（z轴方向）转向<span
+class="math inline">\((1, 0,
+0)\)</span>（x轴方向）的方向，不难推理，如果把这个方法的两个参数顺序反过来的话，转轴向量应该变成<span
+class="math inline">\((0.00000, -0.70711, 0.00000)\)</span>而<span
+class="math inline">\(w\)</span>不变，事实上也确实是这样。</p>
+<h1 id="第二部分-蜥蜴科学家才能看懂-推导与证明">第二部分
+蜥蜴科学家才能看懂 推导与证明</h1>
+<p>  好了，到了这一部分，普通蜥蜴可能已经看不懂了，但是只需要再聪明一点点，蜥蜴科学家就可以看懂，理所当然地，作为21世纪人类的你肯定能看懂<del>，至少我对我的表达能力有这么自信</del>。</p>
+<p>  首先，在讨论任何事情之前，我希望先缕清我们到底想干什么，这里，我们想做的事是<strong>通过解析几何推出三维空间中旋转的一般式，再通过把向量替换成四元数，得到由四元数表示的旋转公式！</strong>
+时刻记住我们的主线任务！</p>
+<h2 id="三维空间中的旋转">1. 三维空间中的旋转</h2>
+<p>  在空间几何中，三维向量既可以表示一个方向，也可以表示一个空间中的点，例如<span
+class="math inline">\((1, 0, 0)\)</span>既可以表示<span
+class="math inline">\(x\)</span>轴方向长度为1的向量，也可以表示<span
+class="math inline">\(x\)</span>轴上与原点距离为1的一个点，它们在向量的表示方法上并不做区分，当然，在齐次坐标中可以通过第4个维度<span
+class="math inline">\(w\)</span>值区分向量和点，但在这里我们暂时用不到齐次坐标，并且，我们仅考虑向量的旋转，所以，我们<strong>默认向量的起点都是原点</strong>，哪怕在实际应用中，向量的起点可能并不是原点，你仍可以把它平移到原点，完成旋转后，再反向平移回原位。</p>
+<p>  注意，在这里我们使用<strong>右手坐标系</strong>，右手拇指指向z轴，四指便从x轴指向y轴，不要和之前讲的Unity使用的左手坐标系搞混了！</p>
+<p>  现有考虑这样一个场景，这个场景在第一部分讨论过，也就是向量<span
+class="math inline">\(v\)</span>绕转轴<span
+class="math inline">\(u\)</span>旋转<span
+class="math inline">\(\theta\)</span>角度，得到新的向量<span
+class="math inline">\(v&#39;\)</span>。现在我们让转轴<span
+class="math inline">\(u\)</span>与z轴重合，并且为了计算方便，我们令<span
+class="math inline">\(u\)</span>为单位向量，即</p>
+<p><span class="math display">\[
+u = (0, 0, 1)
+\]</span></p>
+<p>  我们怎么从空间几何角度描述这个旋转呢？一个容易想到的方法就是<strong>把向量<span
+class="math inline">\(v\)</span>分解为平行于<span
+class="math inline">\(u\)</span>和垂直于<span
+class="math inline">\(u\)</span>的两个分量<span
+class="math inline">\(v_{\perp}\)</span>和<span
+class="math inline">\(v_{\parallel}\)</span></strong>，分别对它们做旋转得到旋转后的两个分量<span
+class="math inline">\(v_{\perp}’\)</span>和<span
+class="math inline">\(v_{\parallel}&#39;\)</span>，再把它们两个加和起来，便得到了<span
+class="math inline">\(v&#39;\)</span></p>
+<h3 id="旋转分解">1.1 旋转分解</h3>
+<p>  按之前提出的方法，把<span
+class="math inline">\(v\)</span>分解为垂直和平行于<span
+class="math inline">\(u\)</span>的两个分量，即</p>
+<p><span class="math display">\[
+v = v_{\parallel} + v_{\perp}
+\]</span></p>
+<p>  将两个分量分别旋转后，就可以得到我们希望得到的旋转后的结果<span
+class="math inline">\(v&#39;\)</span>，即</p>
+<p><span class="math display">\[
+v&#39; = v_{\parallel}&#39; + v_{\perp}&#39;
+\]</span></p>
+<p>  好了，我们要做的事很清晰了，即先想办法表示出两个分量，再考虑对它们进行旋转。</p>
+<p>  首先，将向量<span
+class="math inline">\(v\)</span>分别正交投影到平行于<span
+class="math inline">\(u\)</span>和垂直于<span
+class="math inline">\(u\)</span>的两个方向上，即</p>
+<p><span class="math display">\[
+v_{\parallel} = \frac{u \cdot v}{u \cdot u}u
+\]</span> <span class="math display">\[
+\space\space\space\space\space = (u \cdot v)u
+\]</span></p>
+<p>  注意，之前提到过<span
+class="math inline">\(u\)</span>是单位向量，所以<span
+class="math inline">\(u \cdot u\)</span>结果为1。</p>
+<p><span class="math display">\[
+v_{\perp} = v - v_{\parallel}
+\]</span> <span class="math display">\[
+\space\space\space\space\space\space\space\space\space\space\space\space\space
+= v - (u \cdot v)u
+\]</span></p>
+<p>  这样，我们就将水平分量和垂直分量用<span
+class="math inline">\(u\)</span>和<span
+class="math inline">\(v\)</span>的向量运算表示出来了。接下来，我们会分别对它们进行旋转。</p>
+<h3 id="v_parallel的旋转">1.2 <span
+class="math inline">\(v_{\parallel}\)</span>的旋转</h3>
+<p>  首先是平行于<span class="math inline">\(u\)</span>的<span
+class="math inline">\(v_{\parallel}\)</span>，由于<span
+class="math inline">\(v_{\parallel}\)</span>与<span
+class="math inline">\(u\)</span>重合，不难知道它绕<span
+class="math inline">\(u\)</span>旋转的结果就是它自己，也就是说我们不需要做任何额外的计算（太好了），即</p>
+<p><span class="math display">\[
+v_{\parallel}&#39; = v_{\parallel}
+\]</span></p>
+<h3 id="v_perp的旋转">1.3 <span
+class="math inline">\(v_{\perp}\)</span>的旋转</h3>
+<p>  由于<span class="math inline">\(v_{\perp}\)</span>正交于<span
+class="math inline">\(u\)</span>，所以<span
+class="math inline">\(v_{\perp}\)</span>的旋转是在一个正交于<span
+class="math inline">\(u\)</span>的平面上进行的，并且由于向量在旋转时模不变，所以其旋转路径是一个圆，由此，我们把空间几何问题转换为了平面几何问题。</p>
+<p>  在这个圆内，我们可以再做一次分解，把旋转后的<span
+class="math inline">\(v_{\perp}&#39;\)</span>分解为平行于<span
+class="math inline">\(v_{\perp}\)</span>的<span
+class="math inline">\(v_{\nu}\)</span>和垂直于<span
+class="math inline">\(v_{\perp}\)</span>的<span
+class="math inline">\(v_{\omega}\)</span>，这个垂直方向可以由<span
+class="math inline">\(u\)</span>叉乘<span
+class="math inline">\(v_{\perp}\)</span>得到，我们令它为<span
+class="math inline">\(w\)</span>，即</p>
+<p><span class="math display">\[
+w = u \times v_{\perp}
+\]</span></p>
+<p>  我直接给出结论：<span class="math inline">\(w\)</span>的模等于<span
+class="math inline">\(v_{\perp}\)</span>的模，所以它刚好在圆上，证明参考<a
+href="#fn1" class="footnote-ref" id="fnref1"
+role="doc-noteref"><sup>1</sup></a>。于是我们有 <span
+class="math display">\[
+v_{\perp}&#39; = v_{\nu}&#39; + v_{\omega}&#39;
+\]</span> <span class="math display">\[
+\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space
+= \cos(\theta) v_{\perp} + \sin(\theta) w
+\]</span> <span class="math display">\[
+\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space
+= \cos(\theta) v_{\perp} + \sin(\theta) (u \times v_{\perp})
+\]</span></p>
+<p>  由此，我们将<span
+class="math inline">\(v_{\perp}&#39;\)</span>用<span
+class="math inline">\(v_{\perp}\)</span>, <span
+class="math inline">\(u\)</span>和<span
+class="math inline">\(\theta\)</span>表示出来了</p>
+<h3 id="v的旋转">1.3 <span class="math inline">\(v\)</span>的旋转</h3>
+<p>  现在，我们只需要将旋转后的两个分量进行向量加和即可得到原始向量<span
+class="math inline">\(v\)</span>旋转后得到的结果了，即 <span
+class="math display">\[
+v&#39; = v_{\parallel}&#39; + v_{\perp}&#39;
+\]</span> <span class="math display">\[
+\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space
+= v_{\parallel} + \cos(\theta)v_{\perp} + \sin(\theta)(u \times
+v_{\perp})
+\]</span></p>
+<p>  代入<span class="math inline">\(v_{\parallel}\)</span>和<span
+class="math inline">\(v_{\perp}\)</span>，再利用叉乘分配律，以及正交向量叉乘结果为0的结论，我们可将上式化为
+<span class="math display">\[
+v&#39; = \cos(\theta)v + (1 - cos(\theta))(u \cdot v)u + \sin(\theta)(u
+\times v)
+\]</span></p>
+<p>  好了，皆大欢喜(暂时的)，空间几何的推导部分结束了，我们写出了<span
+class="math inline">\(v&#39;\)</span>用<span
+class="math inline">\(u\)</span>, <span
+class="math inline">\(v\)</span>, <span
+class="math inline">\(\theta\)</span>表示的一般式，也就是空间旋转公式。<br />
+  目前的公式看起来似乎跟四元数没什么关系，别急，接下来，我们就要开始引入四元数来爆改旋转公式了！还记得我们的主线任务吗？如果你不记得了，它在<a
+href="#第二部分-蜥蜴科学家才能看懂-推导与证明">第二部分</a>的开头，一定要记住，我们得在把握全局的前提下再钻进细节研究！</p>
+<h2 id="四元数-1">2. 四元数</h2>
 <hr />
 <p><span class="math display">\[
 施工中...
 \]</span></p>
+<section id="footnotes" class="footnotes footnotes-end-of-document"
+role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1"><p><span class="math inline">\(PROOF\)</span> <span
+class="math display">\[
+∥w∥ = ∥u \times v_{\perp}∥
+\]</span> <span class="math display">\[
+\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space
+= ∥u∥ \cdot ∥v∥ \cdot \sin (\pi / 2)
+\]</span> <span class="math display">\[
+\space = ∥v_{\perp}∥
+\]</span> <span class="math inline">\(Q.E.D.\)</span><a href="#fnref1"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
 
     </div>
 
