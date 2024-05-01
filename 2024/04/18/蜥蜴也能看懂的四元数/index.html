@@ -25,7 +25,7 @@
 <meta property="og:site_name" content="Atsukko&#39;s Deep Dark Dungeon">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2024-04-18T14:25:59.000Z">
-<meta property="article:modified_time" content="2024-04-22T07:18:42.487Z">
+<meta property="article:modified_time" content="2024-05-01T06:14:05.451Z">
 <meta property="article:author" content="Atsukko">
 <meta name="twitter:card" content="summary">
 
@@ -195,7 +195,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2024-04-22 15:18:42" itemprop="dateModified" datetime="2024-04-22T15:18:42+08:00">2024-04-22</time>
+      <time title="Modified: 2024-05-01 14:14:05" itemprop="dateModified" datetime="2024-05-01T14:14:05+08:00">2024-05-01</time>
     </span>
 
   
@@ -227,7 +227,7 @@
 id="第一部分-让蜥蜴看明白公式解析用法举例">第一部分-让蜥蜴看明白：公式解析+用法举例！</h1>
 <h2 id="旋转公式">旋转公式</h2>
 <p><span class="math display">\[\begin{equation}\label{eqn-1}
-v&#39;=q^*vq
+v&#39;=qvq^*
 \end{equation}\]</span></p>
 <p>其中：<br />
 <span class="math inline">\(v:\)</span> 需要应用旋转的原向量<br />
@@ -244,7 +244,7 @@ class="math inline">\(q\)</span>是什么东西？</p>
 <p>  这里先给出四元数<span
 class="math inline">\(q\)</span>的表达式：<br />
 <span class="math display">\[
-q=[\sin \theta ,u\cos \theta ]
+q=[\cos \theta ,u\sin \theta ]
 \]</span></p>
 <p>其中：<br />
 <span class="math inline">\(\theta:\)</span> 旋转的角度<br />
@@ -253,9 +253,9 @@ q=[\sin \theta ,u\cos \theta ]
 class="math inline">\(u\)</span>和旋转角度<span
 class="math inline">\(\theta\)</span>描述了一个旋转，那么这里的中括号又表示什么意思呢？在第一部分我只大概描述一下，更深入的分析可转到第二部分。<br />
   这里的大括号表示方法是在描述一个<strong>虚数</strong>，这一概念在开头已经提过，四元数本质上就是一个虚数，在中括号内，逗号前是实部，通常是一个实数（如上式中的<span
-class="math inline">\(\sin
+class="math inline">\(\cos
 \theta\)</span>）；逗号后是虚部，通常是一个向量 （如上式中的<span
-class="math inline">\(u\cos \theta\)</span>）。<br />
+class="math inline">\(u\sin \theta\)</span>）。<br />
   但是通常来说，虚数的实部与虚部不应该分别是一个实数吗？这个向量又是怎么回事呢？这个问题很简单，四元数四元数，“四”是哪来的呢？其实是一个实部，加上虚部向量的三个分量，加起来就是四元数嘛。在本科高数课堂上我们学到的虚数大部分情况下只包含一个虚数单位，也就是大名鼎鼎的<span
 class="math inline">\(i\)</span>，在四元数中，我们又引入了另外2个虚数单位，<span
 class="math inline">\(j\)</span>和<span
@@ -267,11 +267,16 @@ class="math inline">\(q\)</span>更具体的表达式：</p>
 q=\sin \theta + u_x\cos \theta *i + u_y\cos \theta *j + u_z\cos \theta
 *k
 \]</span></p>
-<p>那么，现在又有新的问题出现了，在旋转公式中是怎么实现向量和四元数的乘法的呢？答案是把向量写成纯四元数（实部为0的四元数）的形式，至于把向量转换为纯四元数以及四元数运算的细节我们到下一部分再展开聊聊<del>再聊下去就要偏题了！</del>。</p>
+<p>  那么，现在又有新的问题出现了，在旋转公式中是怎么实现向量和四元数的乘法的呢？答案是把向量写成纯四元数（实部为0的四元数）的形式，至于把向量转换为纯四元数以及四元数运算的细节我们到下一部分再展开聊聊<del>再聊下去就要偏题了！</del>。</p>
 <h2 id="四元数的用法">四元数的用法</h2>
 <p>  到这里，我们要做什么事情应该是非常清晰的：<font color=red>通过指定转轴<span
 class="math inline">\(u\)</span>和转角<span
 class="math inline">\(\theta\)</span>描述一个旋转！</font>那么谁来执行这个旋转呢？当然是把参数传给API让引擎完成了！</p>
+<p>  例如，Unity引擎的旋转就是由四元数实现的，它在四元数类Quaternion中为我们提供了一系列底层通过四元数描述三维空间中旋转的方法，例如下面这行C#代码：</p>
+<p><code>Debug.Log(Quaternion.FromToRotation(new Vector3(0, 0, 1), new Vector3(1, 0, 0)));</code></p>
+<p>  控制台输出结果为：</p>
+<p><code>(0.00000, 0.70711, 0.00000, 0.70711)</code></p>
+<p>  </p>
 <hr />
 <p><span class="math display">\[
 施工中...
