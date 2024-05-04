@@ -2505,7 +2505,7 @@ header.header {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #8f4ddd;
+  background: #215dff;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2595,11 +2595,9 @@ body {
   margin-bottom: 24px;
   padding: 20px;
   border-radius: 30px 30px 30px 30px;
-  box-shadow: 8px 7px 2px 0 rgba(0,0,0,0.12), 7px 4px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
 }
 .header-inner {
   border-radius: 30px 30px 30px 30px;
-  box-shadow: 8px 7px 2px 0 rgba(0,0,0,0.12), 7px 4px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
 }
 .pagination {
   border-radius: 30px 80px 30px 80px;
@@ -2623,7 +2621,7 @@ body {
 }
 table {
   margin: 20px 0;
-  width: 80%;
+  width: 60%;
   font-size: 18px;
   border: 1px solid #ddd;
   margin: auto;
@@ -2632,11 +2630,16 @@ th,
 td {
   border-bottom: 1px solid #ddd;
   border-right: 1px solid #eee;
+  width: 25px;
 }
 th,
 td {
-  background-color: rgba(255,255,255,0.6);
+  background-color: rgba(255,255,255,0.4) !important;
   color: #000;
 }
-/*tr:nth-child(even) {background-color: rgba(255, 255, 255, 0.6);}
-  tr:nth-child(odd) {background-color: rgba(255, 255, 255, 0.6);}*/
+tr:nth-child(even) {
+  background-color: rgba(255,255,255,0.4) !important;
+}
+tr:nth-child(odd) {
+  background-color: rgba(255,255,255,0.4) !important;
+}
